@@ -1,0 +1,54 @@
+.todo-list li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center; /* För att placera boxen och texten på samma rad */
+    cursor: pointer;
+    padding-left: 30px; /* Lite utrymme så att boxen inte ligger för nära texten */
+}
+
+
+.todo-list li::before {
+    content: ''; /* Skapar det tomma innehållet för boxen */
+    width: 15px; /* Bredden på fyrkanten */
+    height: 15px; /* Höjden på fyrkanten */
+    border: 1px solid black; /* Boxens kant */
+    border-radius: 5px;
+    margin-right: 10px; /* Utrymme mellan boxen och texten */
+    display: inline-block;
+    transition: background-color 0.3s ease; /* För att få en smidig övergång vid markering */
+}
+
+.todo-list li.completed::before {
+    background-color: rgb(185, 222, 255); /* Fyll boxen med grå färg när Todo är slutförd */
+  }
+
+h1 {
+    color: rgb(0, 0, 57);
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 1rem;
+}
+
+.input-field {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+.input-btn {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.input-btn:hover {
+    background-color: rgb(185, 222, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
