@@ -2,13 +2,15 @@
  import React from 'react'
  import Navbar from '../components/Navbar'
  import Footer from '../components/Footer'
- import './style.css'
+ import './pagestyle.css'
 
  const Home = () => {
    return (
-     <div className="home-container">
+     <div>
          <Navbar />
-         <h1>Home</h1>
+         <div className="home-container">
+         <h1 className='headline'>Welcome to ToDo!</h1>
+         </div>
          <Footer/>
      </div>
    )

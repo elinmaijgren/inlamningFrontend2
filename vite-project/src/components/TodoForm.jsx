@@ -4,6 +4,10 @@ import './Todo.css'
 const TodoForm = ({addTodo}) => {
     const [text, setText] = useState("");
 
+    const handleChange = (event) => {
+      setText(event.target.value);
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if(!text.trim()) return;
@@ -13,7 +17,7 @@ const TodoForm = ({addTodo}) => {
 
   return (
     <form onSubmit={handleSubmit}>
-        <input type='text' className='input-field' value={text} onChange={(e) => setText(e.target.value)} placeholder='Lägg till en uppgift...'/>
+        <input type='text' className='input-field' value={text} onChange={handleChange} placeholder='Lägg till en uppgift...'/>
         <button type='submit' className='input-btn'>Lägg till</button>
     </form>
   )

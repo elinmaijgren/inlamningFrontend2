@@ -5,6 +5,7 @@
  import TodoForm from "../components/TodoForm";
  import TodoList from "../components/TodoList";
  import '../components/Todo.css'
+ import './pagestyle.css'
 
  const Todo = () => {
     const [todos, setTodos] = useState([]);
@@ -29,7 +30,7 @@
    return (
      <div>
          <Navbar />
-         <div>
+         <div className='todo-container'>
           <h1>Min Todo-lista</h1>
           <TodoForm addTodo={addTodo} />
           <TodoList todos={todos} toggleComplete={toggleComplete} />

@@ -1,0 +1,42 @@
+.home-container {
+    background-image: url('../assets/pictures/background.jpg'); /* 🔹 Ange rätt sökväg till bilden */
+    background-size: cover; /* 🔹 Gör så att bilden täcker hela skärmen */
+    background-position: center; /* 🔹 Centrerar bilden */
+    background-repeat: no-repeat; /* 🔹 Förhindrar att bilden upprepas */
+    min-height: 100vh; /* 🔹 Gör att sektionen tar upp hela skärmhöjden */
+    width: 100vw; /* 🔹 Täcker hela bredden */
+  }
+
+
+.todo-container {
+    min-height: 100vh;
+}
+
+.omoss-container {
+    margin-left: 1rem;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.715);
+    margin: 0;
+}
+
+.delete-btn {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+
+.delete-btn:hover {
+    background-color: rgb(185, 222, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+  
