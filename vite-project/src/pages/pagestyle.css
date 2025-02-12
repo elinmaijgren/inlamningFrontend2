@@ -1,13 +1,13 @@
 .home-container {
-    background-image: url('../assets/pictures/background.jpg'); /* 🔹 Ange rätt sökväg till bilden */
-    background-size: cover; /* 🔹 Gör så att bilden täcker hela skärmen */
-    background-position: center; /* 🔹 Centrerar bilden */
-    background-repeat: no-repeat; /* 🔹 Förhindrar att bilden upprepas */
-    min-height: 100vh; /* 🔹 Gör att sektionen tar upp hela skärmhöjden */
-    width: 100vw; /* 🔹 Täcker hela bredden */
+    background-image: url('../assets/pictures/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    width: 100vw; 
   }
 
-
+/* Kolla igenom all css och se om det går att komprimera*/
 .todo-container {
     min-height: 100vh;
 }
@@ -38,5 +38,10 @@
 .delete-btn:hover {
     background-color: rgb(185, 222, 255);
     font-family: 'Courier New', Courier, monospace;
+}
+
+.rubrik {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 57);
 }
   

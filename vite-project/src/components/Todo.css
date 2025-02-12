@@ -3,27 +3,29 @@
     color: gray;
 }
 
+/* Se om jag kan flytta lite mellan den här css filen och pagestyle css*/
+
 .todo-list li {
     display: flex;
-    align-items: center; /* För att placera boxen och texten på samma rad */
+    align-items: center;
     cursor: pointer;
-    padding-left: 30px; /* Lite utrymme så att boxen inte ligger för nära texten */
+    padding-left: 30px; 
 }
 
 
 .todo-list li::before {
-    content: ''; /* Skapar det tomma innehållet för boxen */
-    width: 15px; /* Bredden på fyrkanten */
-    height: 15px; /* Höjden på fyrkanten */
-    border: 1px solid black; /* Boxens kant */
+    content: ''; 
+    width: 15px; 
+    height: 15px; 
+    border: 1px solid black; 
     border-radius: 5px;
-    margin-right: 10px; /* Utrymme mellan boxen och texten */
+    margin-right: 10px;
     display: inline-block;
-    transition: background-color 0.3s ease; /* För att få en smidig övergång vid markering */
+    transition: background-color 0.3s ease; 
 }
 
 .todo-list li.completed::before {
-    background-color: rgb(185, 222, 255); /* Fyll boxen med grå färg när Todo är slutförd */
+    background-color: rgb(185, 222, 255); 
   }
 
 h1 {
