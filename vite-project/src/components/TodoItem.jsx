@@ -1,12 +1,17 @@
 import React from 'react'
 import './Todo.css'
 
-const TodoItem = ({todo, toggleComplete}) => {
+const TodoItem = ({todo, toggleComplete, deleteTodo}) => {
   return (
-    //kolla om jag kan skriva om detta på ett enklare sätt
     <li className={todo.completed ? "completed" : ""}
     onClick={() => toggleComplete(todo.id)}>
         {todo.text}
+      <button className="delete-item-btn" onClick={(e) => {
+        e.stopPropagation();
+        deleteTodo(todo.id);
+      }}>
+        ❌
+      </button>
     </li>
   )
 }

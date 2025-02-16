@@ -9,8 +9,10 @@
      <div>
          <Navbar />
          <div className="home-container">
-          {/* Denna ska ligga i mitten av skärmen och ha box shadow*/}
+          <div className='home-text'>
          <h1 className='headline'>Welcome to ToDo!</h1>
+         <p className='subtext'>Små steg leder till stora framgångar. Låt oss börja!</p>
+         </div>
          </div>
          <Footer/>
      </div>
